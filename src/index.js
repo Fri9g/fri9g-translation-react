@@ -1,6 +1,5 @@
-import React from 'react'
-import styles from './styles.module.css'
+import { FLC as flc } from './FLC'
+import flt from './FLT'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export const FLC = flc
+export const FLT = flt

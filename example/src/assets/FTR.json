@@ -1,0 +1,11 @@
+{
+  "fr": {
+    "test":"test réussi"
+  },
+  "en": {
+    "test":"test worked",
+    "testo":{
+      "test":"test inside an object"
+    }
+  }
+}

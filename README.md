@@ -13,15 +13,22 @@ npm install --save fri9g-translation-react
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'fri9g-translation-react'
+import { FLC, FLT } from 'fri9g-translation-react'
+const FTR = require('./assets/FTR.json') //Json with the translation object
 import 'fri9g-translation-react/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
+const Example = (props) => {
+  const FLCV = {
+    "lang":"en",
+    FTR
   }
+  return( 
+    <FLC.Provider value={FLCV}>
+      <h1><FLT FLK="test"/></h1>
+    </FLC.Provider>
+  )
 }
 ```
 
